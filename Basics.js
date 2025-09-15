@@ -49,18 +49,40 @@
 // Hoisting
 // 1. Function Declarations are hoisted
 
-sayHello () ;
+// sayHello () ;
 
-function sayHello () {
-    console.log("Hello,how are you ?")
-}
+// function sayHello () {
+//     console.log("Hello,how are you ?")
+// }
 
 // 2.Variables with var are hoisted but set to undefined 
 
-console.log(x); 
-var x = 10;
+// console.log(x); 
+// var x = 10;
 
 // 3. let and const are hoisted but not initialized (in "temporal dead zone") 
 
-console.log(y);
-let y = 20;
+// console.log(y);
+// let y = 20;
+
+
+// 1. Type Coercion
+//   When JavaScript automatically converts a value from one type to another behind the scenes (implicit conversion).
+
+
+// String + Number → String
+console.log("5" + 2);   
+
+// Number - String → Number
+console.log("5" - 2);  
+
+// Number * String → Number
+console.log("10" * "2");  
+
+// Boolean with Numbers
+console.log(1 + true);   
+console.log(1 + false);  
+
+// Null and Undefined
+console.log(Number(null));      
+console.log(Number(undefined)); 
