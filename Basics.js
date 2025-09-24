@@ -86,3 +86,20 @@ console.log(1 + false);
 // Null and Undefined
 console.log(Number(null));      
 console.log(Number(undefined)); 
+
+
+// 1.Create a new array that contains only the even numbers.
+
+// const numbers = [4, 7, 2, 9, 5, 1, 8];
+
+// const evens = numbers.filter(num => num % 2 === 0);
+
+// console.log(evens); 
+
+
+// 2.Create another new array where each number is doubled.
+// const numbers = [4, 7, 2, 9, 5, 1, 8];
+
+// const doubled = numbers.map(num => num * 2);
+
+// console.log(doubled);
