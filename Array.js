@@ -63,9 +63,30 @@
 
 
 // Problem:
-// You are given an array of numbers:
-// let arr = [12, 7, 9, 20, 5, 15];
-// Sort the array in ascending order using insertion sort.
-// After sorting, insert a new number 10 into the correct position in the sorted array without sorting the whole array again.
-// Print the final array.
+// Median of two sorted array
 
+let nums1 = [1, 3];
+let nums2 = [2];
+
+nums1 = nums1.concat(nums2);
+let n = nums1.length;
+
+// bubble sort
+for (let i = 0; i < n; i++) {
+  for (let j = 0; j < n - i - 1; j++) {
+    if (nums1[j] > nums1[j + 1]) {
+      [nums1[j], nums1[j + 1]] = [nums1[j + 1], nums1[j]];
+    }
+  }
+}
+
+let mid = parseInt(n / 2);
+let median;
+
+if (n % 2 !== 0) {
+  median = nums1[mid];
+} else {
+  median = (nums1[mid - 1] + nums1[mid]) / 2;
+}
+
+console.log(median);
