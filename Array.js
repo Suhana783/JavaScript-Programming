@@ -65,28 +65,66 @@
 // Problem:
 // Median of two sorted array
 
-let nums1 = [1, 3];
-let nums2 = [2];
+// let nums1 = [1, 3];
+// let nums2 = [2];
 
-nums1 = nums1.concat(nums2);
-let n = nums1.length;
+// nums1 = nums1.concat(nums2);
+// let n = nums1.length;
 
-// bubble sort
-for (let i = 0; i < n; i++) {
-  for (let j = 0; j < n - i - 1; j++) {
-    if (nums1[j] > nums1[j + 1]) {
-      [nums1[j], nums1[j + 1]] = [nums1[j + 1], nums1[j]];
-    }
-  }
+// // bubble sort
+// for (let i = 0; i < n; i++) {
+//   for (let j = 0; j < n - i - 1; j++) {
+//     if (nums1[j] > nums1[j + 1]) {
+//       [nums1[j], nums1[j + 1]] = [nums1[j + 1], nums1[j]];
+//     }
+//   }
+// }
+
+// let mid = parseInt(n / 2);
+// let median;
+
+// if (n % 2 !== 0) {
+//   median = nums1[mid];
+// } else {
+//   median = (nums1[mid - 1] + nums1[mid]) / 2;
+// }
+
+// console.log(median);
+
+
+// console.log(a);
+// var a = 10;
+// foo();
+// function foo() {
+//   console.log(a);
+//   var a = 5;
+//   bar();
+//   function bar() {
+//     console.log(a);
+//   }
+// }
+// console.log(a);
+
+var a;  // hoisted
+console.log(a);
+a = 10;
+
+
+
+
+console.log("1");
+
+setTimeout(() => console.log("2"), 0);
+
+Promise.resolve().then(() => console.log("3"));
+
+async function test() {
+  await Promise.resolve();
+  console.log("4");
 }
 
-let mid = parseInt(n / 2);
-let median;
+test();
 
-if (n % 2 !== 0) {
-  median = nums1[mid];
-} else {
-  median = (nums1[mid - 1] + nums1[mid]) / 2;
-}
+console.log("5");
 
-console.log(median);
+
