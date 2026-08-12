@@ -105,26 +105,48 @@
 // }
 // console.log(a);
 
-var a;  // hoisted
-console.log(a);
-a = 10;
+// var a;  // hoisted
+// console.log(a);
+// a = 10;
 
 
 
 
-console.log("1");
+// console.log("1");
 
-setTimeout(() => console.log("2"), 0);
+// setTimeout(() => console.log("2"), 0);
 
-Promise.resolve().then(() => console.log("3"));
+// Promise.resolve().then(() => console.log("3"));
 
-async function test() {
-  await Promise.resolve();
-  console.log("4");
-}
+// async function test() {
+//   await Promise.resolve();
+//   console.log("4");
+// }
 
-test();
+// test();
 
-console.log("5");
+// console.log("5");
 
+
+// 3. Find out non-repeating character in an array of integers 
+
+// function nonRepeatingNumber(arr) {
+//     for (let i = 0; i < arr.length; i++) {
+//         let isUnique = true; 
+//         for (let j = 0; j < arr.length; j++) {
+//             if (i !== j && arr[i] === arr[j]) {
+//                 isUnique = false; 
+//                 break; 
+//             }
+//         }
+
+//         if (isUnique) {
+//             return arr[i];
+//         }
+//     }
+//     return null; 
+// }
+
+//  arr = [ 10, 10, 11, 12, 12 ];
+// console.log(nonRepeatingNumber(arr)); 
 

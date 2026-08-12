@@ -71,21 +71,21 @@
 
 
 // String + Number → String
-console.log("5" + 2);   
+// console.log("5" + 2);   
 
 // Number - String → Number
-console.log("5" - 2);  
+// console.log("5" - 2);  
 
-// Number * String → Number
-console.log("10" * "2");  
+// // Number * String → Number
+// console.log("10" * "2");  
 
-// Boolean with Numbers
-console.log(1 + true);   
-console.log(1 + false);  
+// // Boolean with Numbers
+// console.log(1 + true);   
+// console.log(1 + false);  
 
-// Null and Undefined
-console.log(Number(null));      
-console.log(Number(undefined)); 
+// // Null and Undefined
+// console.log(Number(null));      
+// console.log(Number(undefined)); 
 
 
 // 1.Create a new array that contains only the even numbers.
@@ -103,3 +103,36 @@ console.log(Number(undefined));
 // const doubled = numbers.map(num => num * 2);
 
 // console.log(doubled);
+
+
+// Default Parameters 
+// function greet(name="Hayat") {
+//     console.log(`Hello ${name}`)
+// }
+
+// greet("payal")
+
+
+// Rest Operator (collects values into an array)
+
+// function multiply (...numbers) {
+//     return numbers.map(num => num * 2)
+// }
+
+// console.log(multiply(2,3,4,5,6,7))
+
+// spread operator (spreads an array into individual values)
+// 1. Array
+
+// let arr1 = [1,4,5,6]
+// let arr2 = [...arr1,56,78,9]
+// console.log(arr2)
+
+// 2. Copy an Array
+
+// let arr1 = [10, 20, 30];
+// let arr2 = [...arr1];
+// console.log(arr2);
+
+// 3. Objects 
+

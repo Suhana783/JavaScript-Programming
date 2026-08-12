@@ -38,25 +38,9 @@
 
 
 
-// 3. Find out non-repeating character in an array of integers 
 
-function nonRepeatingNumber(arr) {
-    for (let i = 0; i < arr.length; i++) {
-        let isUnique = true; 
-        for (let j = 0; j < arr.length; j++) {
-            if (i !== j && arr[i] === arr[j]) {
-                isUnique = false; 
-                break; 
-            }
-        }
+let message = `Hello Suhana
+Welcome to JavaScript
+Keep learning!`;
 
-        if (isUnique) {
-            return arr[i];
-        }
-    }
-    return null; 
-}
-
- arr = [ 10, 10, 11, 12, 12 ];
-console.log(nonRepeatingNumber(arr)); 
-
+console.log(message);

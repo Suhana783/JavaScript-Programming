@@ -119,18 +119,20 @@
 // console.log(parseInt("10.70kg"));
 
 
-let day = 2;
+// let day = 2;
 
-switch (day) {
-    case 1:
-        console.log("Monday");
+// switch (day) {
+//     case 1:
+//         console.log("Monday");
 
-    case 2:
-        console.log("Tuesday");
+//     case 2:
+//         console.log("Tuesday");
 
-    case 3:
-        console.log("Wednesday");
+//     case 3:
+//         console.log("Wednesday");
 
-    default:
-        console.log("Invalid");
-}
+//     default:
+//         console.log("Invalid");
+// }
+
+
